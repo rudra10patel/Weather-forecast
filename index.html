@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="weather_header">
+            <button class="switch-theme">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <h1 class="title">Weather</h1>
+            <form class="weather_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input class="weather_city" list="cities" id="city" name="city" placeholder="Search your city...">
+
+                <datalist id="cities">
+                    <option value="Ahmedabad">
+                    <option value="Mumbai">
+                    <option value="Delhi">
+                    <option value="Pune">
+                    <option value="Bangalore">
+                    <option value="Surat">
+                </datalist>
+            </form>
+
+        </section>
+
+        <section class="weather_maininfo">
+            <h1 class="city_info"></h1>
+            <p class="city_date_time" style="font-size: 2em;"></p>
+            <div class="weatherdata">
+                <p class="weather_forecast"></p>
+                <div class="weather_icon"></div>
+            </div>
+            <div class="temp">
+                <p class="weather_temp"> </p>
+                <div class="weather_min_max">
+                    <p class="weather_min"></p>
+                    <p class="weather_max"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Weather_extrainfo">
+            <div class="weather_card">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <div>
+                    <p>feels like</p>
+                    <p class="feels_like">15&#176</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="Humidity">15&#176</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="Wind">15&#176</p>
+                </div>
+            </div>
+            <div class="weather_card">
+                <i class="fa-solid fa-gauge"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="Pressure">15&#176</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
